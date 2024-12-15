@@ -12,7 +12,6 @@ export const github_crawler = async (username: string) => {
       break;
     }
 
-    console.log(data.data);
     repos.push(...data.data);
     page += 1;
   }
