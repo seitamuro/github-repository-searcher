@@ -1,1 +1,0 @@
-GITHUB_ACCESS_TOKEN="https://qiita.com/sakasegawa/items/16714fa132e874cab069"

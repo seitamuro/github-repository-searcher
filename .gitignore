@@ -1,2 +1,7 @@
 node_modules/
 .pnpm-store/
+.venv/
+
+aws-samples.ts
+aws-samples.json
+env.sh

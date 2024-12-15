@@ -6,7 +6,3 @@ node_modules
 # CDK asset staging directory
 .cdk.staging
 cdk.out
-
-aws-samples.ts
-aws-samples.json
-env.sh
