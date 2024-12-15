@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const github_crawler = async (username: string) => {
   const repos = [];
-  let page = 0;
+  let page = 1;
 
   while (true) {
     const data = await axios.get(
