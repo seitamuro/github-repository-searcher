@@ -1,0 +1,3 @@
+{
+  "python.analysis.extraPaths": ["${WorkspaceFolder}/packages/sandbox/.venv"]
+}
