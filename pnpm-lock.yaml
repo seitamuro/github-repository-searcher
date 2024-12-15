@@ -54,6 +54,19 @@ importers:
         specifier: ~5.6.3
         version: 5.6.3
 
+  packages/sandbox:
+    dependencies:
+      axios:
+        specifier: ^1.7.9
+        version: 1.7.9
+    devDependencies:
+      '@types/node':
+        specifier: 22.7.9
+        version: 22.7.9
+      fs:
+        specifier: 0.0.1-security
+        version: 0.0.1-security
+
 packages:
 
   /@ampproject/remapping@2.3.0:
@@ -1812,6 +1825,10 @@ packages:
 
   /fs.realpath@1.0.0:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
+    dev: true
+
+  /fs@0.0.1-security:
+    resolution: {integrity: sha512-3XY9e1pP0CVEUCdj5BmfIZxRBTSDycnbqhIOGec9QYtmVH2fbLpj86CFWkrNOkt/Fvty4KZG5lTglL9j/gJ87w==}
     dev: true
 
   /fsevents@2.3.2:
