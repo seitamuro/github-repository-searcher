@@ -1,0 +1,14 @@
+{
+  "name": "github-repo-search",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cdk:deploy": "pnpm run --filter cdk cdk deploy",
+    "cdk:hotswap": "pnpm run --filter cdk cdk deploy --hotswap"
+  },
+  "packageManager": "pnpm@8.15.0",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
