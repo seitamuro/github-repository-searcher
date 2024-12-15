@@ -28,15 +28,16 @@ app.get("/crawler/github", async (c) => {
   }
 
   try {
-    const _repos = await github_crawler(username);
-    const repos = [];
+    //const _repos = await github_crawler(username);
+    const repos = await github_crawler(username);
+    //const repos = [];
 
-    for (const repo of _repos) {
+    /*for (const repo of _repos) {
       repos.push(repo.name);
-    }
+    }*/
     return c.json({
       status: 200,
-      num: repos.length,
+      //num: repos.length,
       repos,
     });
   } catch (e) {

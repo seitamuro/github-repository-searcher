@@ -1,5 +1,4 @@
 import * as cdk from "aws-cdk-lib";
-import { LambdaRestApi } from "aws-cdk-lib/aws-apigateway";
 import { Runtime } from "aws-cdk-lib/aws-lambda";
 import { NodejsFunction } from "aws-cdk-lib/aws-lambda-nodejs";
 import { Construct } from "constructs";
@@ -15,14 +14,12 @@ export class CdkStack extends cdk.Stack {
       bundling: {
         sourceMap: true,
       },
-      timeout: cdk.Duration.seconds(30),
+      timeout: cdk.Duration.seconds(300),
     });
-    const api = new LambdaRestApi(this, "Api", {
-      handler: handler,
-    });
+    const functionUrl = handler.addFunctionUrl();
 
-    new cdk.CfnOutput(this, "ApiUrl", {
-      value: api.url,
+    new cdk.CfnOutput(this, "GitHubCrawlerEndpoint", {
+      value: functionUrl.url,
     });
   }
 }
